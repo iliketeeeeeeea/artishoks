@@ -1,16 +1,151 @@
-@media (max-width: 992px) {
-header {
-    background-image: url("../img/back.jpg");
-}
-.logo {
+
+nav .logo {
     font-family: Bebas Neue;
-    color: pink;
+    color: #F4A9FF;
     font-size: 48px;
+    position: relative;
+    left: 40px;
+    flex: 1;
+    margin: 15px;
 }
- .menu {
+nav {
     display: flex;
-    font-family: Noto Sans;
+}
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+nav #button {
+    flex: 1;
+    align-items: center;
+    padding: 28px;
+    position: relative;
+    left: 120px;
+}
+nav #button button {
+    width: 100px;
+    height: 30px;
+}
+nav .menu a {
     text-decoration: none;
     color: white;
+    font-family: Dela Gothic Onel;
+    font-size: 18px;
+    font-weight: bold;
 }
+nav .menu a:hover {
+    text-decoration: underline;
+}
+header {
+    background-image: url("img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+    height: 550px;
+}
+.description {
+    padding: 50px;
+}
+.description a {
+    font-size: 80px;
+    font-family: Bebas Neue;
+}
+.pink {
+    color: #F4A9FF;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+#button2 {
+    padding-left: 50px;
+    position: relative;
+    bottom: 30px;
+}
+#button2 button {
+    width: 100px;
+    height: 30px;
+}
+main h2 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+    text-align: center;
+}
+main .why-choose-us {
+    padding: 20px;
+    font-family: Bebas Neue;
+    font-size: 50px;
+    text-align: center;
+    height: 450px;
+}
+.line {
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: #F4A9FF;
+    width: 100px;
+}
+#follow-a-healthy {
+    font-family: Dela Gothic Onel;
+    color: gray;
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+}
+.reasons .reason .big {
+    font-size: 30px;
+}
+.reasons .reason .small {
+    font-family: Dela Gothic Onel;
+    font-size: 15px;
+    color: gray;
+    line-height: 0.1;
+}
+.reasons {
+    display: flex;
+}
+.reasons .reason {
+    padding: 20px;
+    margin: 20px;
+}
+.reasons .reason .small {
+    line-height: 1;
+} 
+.reasons .reason .small {
+    position: relative;
+    bottom: 25px;
+}
+.about-us {
+    display: flex;
+    background-color: #008282;
+}
+#artichoke {
+    flex: 1;
+    height: 500px;
+}
+.about-us-in {
+    flex:1;
+    position: relative;
+    left: 80px;
+    top: 70px;
+}
+.about-us-text {
+    position: relative;
+    left: 300px;
+}
+.about-us-in .white1 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+    color: white;
+}
+.about-us-in .pink1 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+    color: #F4A9FF;
 }
