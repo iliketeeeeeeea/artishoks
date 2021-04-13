@@ -2,6 +2,11 @@
     --pink: #F4A9FF;
     --green: #008282;
 }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 nav .logo {
     font-family: Bebas Neue;
     color: var(--pink);
@@ -42,7 +47,7 @@ nav .menu a:hover {
     text-decoration: underline;
 }
 header {
-    background-image: url("img/fuck.jpg");
+    background-image: url("img/back.jpg");
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -130,6 +135,8 @@ main .why-choose-us {
 }
 #artichoke {
     flex: 1;
+    background-image: url('img/artichoke1.jpeg');
+    background-size: cover;
     height: 500px;
 }
 .about-us-in {
@@ -153,8 +160,13 @@ main .why-choose-us {
     color: var(--pink);
 }
 #line2 {
-    position: relative;
-    right: 305px;
+    text-align: left;
+    background-color: var(--pink);
+    width: 100px;
+    height: 2px;
+    border: none;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .about-us-text1 {
     color: white;
