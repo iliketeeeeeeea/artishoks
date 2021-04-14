@@ -25,12 +25,32 @@ nav .menu {
     justify-content: space-around;
     flex: 1;
 }
+nav .menu a {
+    position: relative;
+    bottom: 10px;
+}
+@media (max-width: 960px) {
+    nav .menu {
+        display: inline-block;
+        text-align: center;
+        padding-left: 40px;
+    }
+}
 nav #button {
     flex: 1;
     align-items: center;
     padding: 28px;
-    position: relative;
-    left: 120px;
+    text-align: right;
+    padding-right: 100px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.pink-button {
+    background-color: var(--pink);
+    color: white;
+    font-size: 15px;
+    font-weight: "bold";
+    font-family: Dela Gothic Onel;
 }
 nav #button button {
     width: 100px;
@@ -53,7 +73,6 @@ header {
     align-items: center;
     flex-direction: column;
     min-height: 400px;
-    height: 600px;
 }
 .description {
     padding: 50px;
@@ -92,6 +111,30 @@ main .why-choose-us {
     height: 400px;
     padding: 100px;
 }
+main .why-choose-us .reasons {
+    display: flex;
+}
+@media (max-width: 960px) {
+    main .why-choose-us .reasons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main .why-choose-us {
+        height: 600px;
+    }
+}
+@media (max-width: 660px) {
+    main .why-choose-us .reasons {
+        grid-template-columns: 1fr;
+    }
+     main .why-choose-us {
+        height: 800px;
+    }
+    .reason p {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
 .line {
     border: none;
     height: 2px;
@@ -114,9 +157,6 @@ main .why-choose-us {
     font-size: 15px;
     color: gray;
     line-height: 0.1;
-}
-.reasons {
-    display: flex;
 }
 .reasons .reason {
     padding: 20px;
@@ -235,6 +275,7 @@ main .why-choose-us {
     display: footer;
     background-color: #008282;
     height: 300px;
+    display: flex;
 }
 .footer-h-text {
     color: white;
@@ -242,14 +283,14 @@ main .why-choose-us {
     font-size: 30px;
 }
 .block {
-    position: relative;
-    left: 175px;
-    top: 50px;
+    flex: 1;
+    padding-left: 180px;
+    padding-top: 50px;
 }
 #line3 {
-    position: relative;
-    right: 63px;
-    top: 10px;    
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
 }
 .footer-s-text {
     position: relative;
@@ -261,8 +302,9 @@ main .why-choose-us {
     text-decoration: underline;
 }
 .block2 {
-    position: relative;
-    bottom: 95px;
+    flex: 3;
+    padding-top: 50px;
+    padding-left: 60px;
 }
 #add-artichoke-to-cart {
     margin-left: 25px;
